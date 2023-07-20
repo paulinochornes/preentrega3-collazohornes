@@ -47,8 +47,7 @@ function agregarMedicamento(array) {
     const medicamentoNuevo = new Medicamento(SNIng.value, pactivoIng.value, nombreIngr.value, dosisIng.value, presentacionIng.value, categoriaIng.value)
     array.push(medicamentoNuevo)
     localStorage.setItem("vademecum", JSON.stringify(array))
-    verVademecum(array)
-
+    mostrarVademecum(array)
     SNIng.value = ""
     pactivoIng.value = ""
     nombreIngr.value = ""
